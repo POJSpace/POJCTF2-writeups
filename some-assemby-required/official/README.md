@@ -50,7 +50,7 @@ this one just adds +1 to A, B and C
 
 ## Making sense of it all
 
-Alright, so A stores our input, B some kind of list of numbers, C is a counter. Every cycle we increase C, and when it reaches 12 we have succesfully passed all test and win. A and B are also increased each cycle so they point to their next respective character in their list. If at any point `*A != *B + 48`, the input is marked as invalid. In other words, we need to pass a 12 byte string, where each character must be equal to B minus 48. 
+Alright, so A stores our input, B some kind of list of numbers, C is a counter. Every cycle we increase C, and when it reaches 12 we have succesfully passed all test and win. A and B are also increased each cycle so they point to their next respective character in their list. If at any point `*A != *B + 48`, the input is marked as invalid. In other words, we need to pass a 12 byte string, where each character must be equal to B plus 48. 
 
 # Exploiting it
 We just gotta read the values stored at the address loaded first into B (you can use Hexdump in Cutter). One cool property of ascii, is that you can add 48 to any digit to turn it into the same asci character, e.g. `1 + 48 = '1', 7 + 48 = '7'`. We do this for all 12, and voila! That is our flag.
