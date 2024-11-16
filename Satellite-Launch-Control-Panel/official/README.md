@@ -25,4 +25,4 @@ After accessing the link, we can see the satellite launch control panel:
 
 Now, we can just open the network tab, put the deployment code in the input and click on the `Submit` button. After that, we got the flag.
 
-![solution](./imgs/solution.mp4)
+![solution](./imgs/solution.gif)
