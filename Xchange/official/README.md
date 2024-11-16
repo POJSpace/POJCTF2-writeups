@@ -39,7 +39,7 @@ for i in range(1, 99999999):
 Now, we just need to figure out `s`, which can be derived by `s = A ** b % p = B ** a % p`.
 
 ## HKDF
-Now we need to derive the key, so i used (this)[https://fotoventus.cz/tool/hkdf.html] for it. Set `Key format` to `ascii`, put my secret as pasword. Entered `DEADBEEF` as salt, and kept the rest to defaults.
+Now we need to derive the key, so I used https://fotoventus.cz/tool/hkdf.html]. Set `Key format` to `ascii`, put my secret as pasword. Entered `DEADBEEF` as salt, and kept the rest to defaults.
 
 ## FERNET
-I used (this)[https://8gwifi.org/fernet.jsp] to decrypt the messages with the base64 key from last step.
+I used https://8gwifi.org/fernet.jsp to decrypt the messages with the base64 key from last step.
